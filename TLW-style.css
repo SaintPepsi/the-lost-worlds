@@ -1,3 +1,7 @@
+/* 
+    Je kan alleen fonts gebruiken als je ze eerst importeert
+    zonder import kan je alleen fonts gebruiken die op de computer van de gebruiker staan
+*/
 @font-face {
     font-family: 'OPTIGoudyOpen';
     src:url('fonts/OPTIGoudyOpen/OPTIGoudyOpen.ttf.woff') format('woff'),
@@ -8,6 +12,9 @@
     font-style: normal;
 }
 
+/* 
+    Dit zijn wat reset stylings zodat je geen rare paddings of marges krijgt
+*/
 * {
     padding: 0;
     margin: 0;
@@ -17,6 +24,9 @@
 }
 
 h1,h2,h3,h4,h5,h6 {
+    /* 
+        Font families zijn altijd met aanhalingstekens
+    */
     font-family: 'OPTIGoudyOpen';
 }
 
@@ -32,6 +42,12 @@ body {
 head {
     background-color: ivory;
 }
+
+/* 
+    Class names zijn herbruikbaar (begint met een punt)
+    ID's zijn uniek (begint met een hekje)
+*/
+
 .page-content {
     display: flex;
     height: 100vh;
@@ -61,6 +77,12 @@ head {
 .desc {
     font-family: 'OPTIGoudyOpen';
 }
+
+ /* 
+    Flex is een manier om elementen te positioneren
+    https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+    redelijk modern maar heel makkelijk om te gebruiken    
+*/
 
 .flex-column-center-center {
     display: flex;
@@ -92,8 +114,10 @@ head {
     border: 0px;
     width: 100%;
 
+    /* 
+        Simpele gradient zodat je de linkjes iets beter ziet.
+    */
     background: rgb(36,17,0);
-    
     background: linear-gradient(0deg, rgba(36,17,0,1) 0%, rgba(121,86,9,0.123) 50%, rgba(255,162,0,0) 100%);
 }
 
@@ -117,6 +141,10 @@ head {
     word-spacing: 2px;
 }
 
+
+/* 
+    Styling was het zelfde voor alle linkjes dus heb ik het samengevoegd
+*/
 a:link,
 a:visited {
     /*color:GoldenRod;*/
@@ -163,3 +191,8 @@ input[type="text"] {
 button {
     padding: 5px 10px;
 }
+
+
+/* 
+    Verder not veel ongebruikte stylings weggehaald
+*/
