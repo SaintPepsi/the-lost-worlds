@@ -1,168 +1,274 @@
 <!DOCTYPE html>
-<html spellcheck="false">    
-<head>
-    <link rel="stylesheet" href="TLW-style.css">
-    <script>
-        window.onload = function (event) { window.location.hash = "#HOME"; };
-        
-        function myFunction() {
-            // Get the text field
+<html spellcheck="false">
+    <head>
+        <!-- Google fonts for de body text toegevoegd. -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
+
+        <link rel="stylesheet" href="TLW-style.css" />
+        <script>
+            window.onload = function (event) {
+                window.location.hash = "#HOME";
+            };
+
+            function copyToClipBoard() {
+                // Get the text field
                 var copyText = document.getElementById("myInput");
 
-            // Select the text field
+                // Select the text field
                 copyText.select();
                 copyText.setSelectionRange(0, 99999); // For mobile devices
 
-            // Copy the text inside the text field
+                // Copy the text inside the text field
                 navigator.clipboard.writeText(copyText.value);
 
-            // Alert the copied text
+                // Alert the copied text
                 alert("Tekst: " + copyText.value + " gekopieerd!");
-        } 
-    </script>
-    <!--begin METADATA-->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="TheLostWorlds" content="TheLostWorlds">
-    <meta name="Title" content="The Lost Worlds, about lost knowledge.">
-    <meta name="Description" content="Dedicated to finding lost ways to restore or replenish spiritual and physical energy and inner balance.">
-    <meta name="Keywords" content="thelostworlds, the lost worlds, spiritual, physical energy, inner balance, mental health, perspective on life, online courses, education">
-    <meta name="Author" content="Rob Hogers">
-    <meta name="Subject" content="Dedicated to finding lost ways to restore or replenish spiritual and physical energy and inner balance.">
-    <meta name="Generator" content="Hard Typed Manual Labour">
-    <meta name="Language" content="English">
-    <meta name="Language" content="Dutch">
-    <meta name="Robots" content="All">
-    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-    <meta http-equiv="PRAGMA" content="NO-CACHE">
-    <meta http-equiv="CACHE-CONTROL" content="NO-CACHE">
-    <meta http-equiv="Expires" content="Sat, 01 Jul 2023 00:00:01 GMT">
-    <!--end METADATA-->
-    <title>The Lost Worlds, about lost knowledge.</title>
-</head>
-<body>
-    <div class="title-container" id="title" style="align: center;">
-        <span id="title">
-        <img name="Site Title" src="imgs/gfx/SiteTitle.png" id="titleimg" alt="The Lost Worlds">
-        </span><br>   
-        <span id="desc">Toegewijd aan het hervinden van je innerlijke balans.<br>
-        </span><br><br>
-        <span id="titlebar" style="nowrap;">
-            <a class="par" target="_self" href="#HOME">
-              <div class="card">
-                <img src="imgs/gfx/home.png" alt="home">
-                <img src="imgs/gfx/homehov.png" class="img-top" alt="home hover">
-              </div>
-            </a>&nbsp;
-            <a class="par" target="_self" href="#ABOUT">
-              <div class="card">
-                <img src="imgs/gfx/about.png" alt="about">
-                <img src="imgs/gfx/abouthov.png" class="img-top" alt="about hover">
-              </div>
-            </a>&nbsp; 
-            <a class="par" target="_self" href="#CURSUS">
-              <div class="card">
-                <img src="imgs/gfx/cursus.png" alt="cursus">
-                <img src="imgs/gfx/cursushov.png" class="img-top" alt="cursus hover">
-              </div>
-            </a>&nbsp;
-            <a class="par" target="_self" href="#CONTACT">
-              <div class="card">
-                <img src="imgs/gfx/contact.png" alt="contact">
-                <img src="imgs/gfx/contacthov.png" class="img-top" alt="contact hover">
-              </div>
-            </a>
-        </span>
-    </div> <br> &nbsp; <br>
-<!-- the following parts are set up for quick access from the linkbar at the top -->
-<a id="HOME"></a>
-    <p style="height: 202px;"> &nbsp; </p>
-    <span id="text-title" style="height: 600px;"><big>Home</big>
-      <div id="text-body">
-        Welkom!<br>
-        The Lost Worlds website heeft zich toegelegd op het terugvinden van je innerlijke balans<br>
-        die leidt tot het herstellen of vernieuwen van spirituele en fysieke energie.<br>
-        Dat klinkt natuurlijk fantastisch en het is ook geweldig fijn dat er mogelijkheden zijn,<br>
-        om dit teweeg te brengen.<br>
-        Zoiets gaat niet vanzelf: daarvoor is veel aandacht, inzet en inspanning nodig.<br>
-        Van iedereen die hier iets mee wil.<br>
-        Ik kan niet zeggen dat deze site met DE oplossing komt voor jouw innerlijke onbalans,<br>
-        of jouw gebrek aan energie. Ook dat is van veel verschillende factoren afhankelijk.<br>
-        Wat kan ik voor jou betekenen?<br>
-        Helemaal niks, of heel erg veel. Dat ligt voor een groot deel bij jezelf.<br>
-        Jij zal er zelf wel iets aan moeten gaan doen.<br>
-        Ik kan jou daarbij helpen, je adviezen geven, lezingen of workshops of cursussen geven.<br>
-        Dat doe ik niet gratis. Ik heb rekeningen te betalen en helemaal niemand,<br>
-        dus ook ik niet, kan van de lucht leven.<br>
-        Interesse? Lees dan verder op de <a target="_self" href="#ABOUT">about-sectie</a>.<br> <br>
-        <a target="_self" href="#HOME">Terug naar HOME</a>
-      </div>
-    </span>
-    <p style="height: 600px;"> &nbsp; </p>
-<a id="ABOUT"></a>
-    <p style="height: 218px;"> &nbsp; </p>
-     <span id="text-title" style="height: 600px;"><big>About</big>
-        <div id="text-body"> 
-         Ik ben John en ik hou mij ruim dertig jaar bezig met alternatieve stromingen.<br>
-         Daarbij viel het mij op dat veel zaken hetzelfde zijn en ook dat er zaken niet besproken worden.<br>
-         Ik probeer juist de onbesproken zaken boven water te halen en ik geloof in de kracht van persoonlijk<br>
-         contact. Dat kan soms met een soort healing, een 1 op 1 sessie, een groeps-sessie,<br>
-         een lezing of een (niet online) cursus zijn.<br>
-         Er zijn genoeg zelfhulp websites, antrosofische sites, yoga-sites, trantra-sites,<br>
-         noem maar op.<br>
-         Vaak wordt je doorverwezen naar professionele (lees: reguliere) hulpverleners.<br>
-         Vaak wordt je overgehaald om online cursussen te doen, of e-boeken tegen betaling te<br> downloaden.<br>
-         Op zich niks mis mee. Als je denkt, dat je dat geld er voor over hebt, prima.<br>
-         Ik ga transparant zijn over wat dingen kosten. Als ik een lezing of een cursus geef,<br>
-         dan spreek ik met je af wat het jou gaat kosten, in tijd en in geld.<br>
-         En ook wat het jou gaat opleveren.<br>
-         En ik laat je niet vooraf betalen.<br>
-         Je betaalt pas, op het moment dat de cursus of de lezing daadwerkelijk plaats vindt.<br>
-         Wil je meer weten over lezingen, workshops en cursussen? Ga dan naar de <a target="_self" href="#CURSUS">cursus-sectie</a>.<br> <br>
-         <a target="_self" href="#HOME">Terug naar HOME</a>
-        </div> 
-     </span>
-    <p style="height: 600px;"> &nbsp; </p>
-<a id="CURSUS"></a>
-    <p style="height: 218px;"> &nbsp; </p>
-     <span id="text-title" style="height: 600px;"><big>Cursus</big>
-        <div id="text-body"> 
-         Heb je behoefte om jezelf beter te leren kennen? Om te ontdekken wat je innerlijke behoeften zijn?<br>
-         Of heb je de behoefte om wat meer evenwichtig te zijn? Om een betere innerlijke balans te hebben?<br>
-         Om meer in contact met jezelf te zijn?<br> <br>
-         Daar heb ik verschillende workshops en cursussen voor. Dat kan 1 op 1 zijn, of in kleine groepjes<br>
-         van 5 tot 10 personen.<br>
-         Dat kan voor een aantal uren zijn, of een aantal dagdelen.<br> <br>
-         Leuk en interessant om met vrienden, vriendinnen of familie te doen.<br>
-         Niet in een duf gebouw, maar in de natuur, omringd door bos, of hei.<br> <br>
-         Onderwerpen die besproken kunnen worden:<br>
-         WIE ben ik, WAAR sta ik in het leven, WAAR wil ik heen? WAT wil ik? WAT ga ik doen?<br>
-         HOE ga ik met mijzelf of mijn omgeving om? HOE kan ik positief zijn?<br>
-         HOE ga ik met negativiteit om? WAT is spiritualiteit? HOE past religie daarin?<br>
-         HOE ga ik met oordelen om?<br> <br>
-         Indien je de behoefte hebt, om meer te weten te komen, of om een lezing bij te wonen,<br>
-         of een workshop of cursus te volgen, ga dan naar de <a target="_self" href="#CONTACT">contact-sectie</a> en stuur mij een email<br>
-         met daarin jouw vraag of behoefte. Ik zal dan zo spoedig mogelijk contact met je opnemen.<br> <br>
-         <a target="_self" href="#HOME">Terug naar HOME</a>
-        </div>  
-     </span>
-    <p style="height: 600px;"> &nbsp; </p>
-<a id="CONTACT"></a>
-    <p style="height: 218px;"> &nbsp; </p>
-     <span id="text-title" style="height: 600px;"><big>Contact</big>
-        <div id="text-body">
-         Heb je naar aanleiding van de inhoud nog vragen?<br> <br>
-         Stuur dan een mailtje naar: <input type="text" value="info@thelostworlds.com" id="myInput"> &nbsp;
-         <button onclick="myFunction()">Klik hier om het emailadres te kopieren</button><br>
-         Op mailtjes reageer ik uiterlijk de volgende werkdag.<br> <br>
-         <div>Ik ben ook via Whatsapp te bereiken: &nbsp; 
-             <img style="height: 28px;" src="imgs/gfx/phone.png" alt="phone"> <img style="height: 20px;" src="imgs/gfx/number.png" alt="number">
-         </div><br>
-         Ik probeer om binnen een redelijke tijd te reageren, tussen 9.00 en 18.00 uur is dat meestal binnen 15 minuten.<br> <br>
-         <a target="_self" href="#HOME">Terug naar HOME</a>
-        </div>
-    </span>
-    <p style="height: 600px;"> &nbsp; </p>
-    end of page
+            }
+        </script>
+        <!--begin METADATA-->
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="TheLostWorlds" content="TheLostWorlds" />
+        <meta name="Title" content="The Lost Worlds, about lost knowledge." />
+        <meta
+            name="Description"
+            content="Dedicated to finding lost ways to restore or replenish spiritual and physical energy and inner balance."
+        />
+        <meta
+            name="Keywords"
+            content="thelostworlds, the lost worlds, spiritual, physical energy, inner balance, mental health, perspective on life, online courses, education"
+        />
+        <meta name="Author" content="Rob Hogers" />
+        <meta
+            name="Subject"
+            content="Dedicated to finding lost ways to restore or replenish spiritual and physical energy and inner balance."
+        />
+        <meta name="Generator" content="Hard Typed Manual Labour" />
+        <meta name="Language" content="English" />
+        <meta name="Language" content="Dutch" />
+        <meta name="Robots" content="All" />
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+        <meta http-equiv="PRAGMA" content="NO-CACHE" />
+        <meta http-equiv="CACHE-CONTROL" content="NO-CACHE" />
+        <meta http-equiv="Expires" content="Sat, 01 Jul 2023 00:00:01 GMT" />
+        <!--end METADATA-->
+        <title>The Lost Worlds, about lost knowledge.</title>
+    </head>
 
- 
+    <body>
+        <div class="page-content">
+            <div class="title-container flex-column-center-center">
+                <img name="Site Title" src="imgs/gfx/SiteTitle.png" id="titleimg" alt="The Lost Worlds" />
+                <span class="desc">Toegewijd aan het hervinden van je innerlijke balans. </span>
+
+                <div id="titlebar" class="flex-center-center">
+                    <a class="par" target="_self" href="#HOME">
+                        <div class="card">
+                            <img src="imgs/gfx/home.png" alt="home" />
+                            <img src="imgs/gfx/homehov.png" class="img-top" alt="home hover" />
+                        </div>
+                    </a>
+
+                    <a class="par" target="_self" href="#ABOUT">
+                        <div class="card">
+                            <img src="imgs/gfx/about.png" alt="about" />
+                            <img src="imgs/gfx/abouthov.png" class="img-top" alt="about hover" />
+                        </div>
+                    </a>
+
+                    <a class="par" target="_self" href="#CURSUS">
+                        <div class="card">
+                            <img src="imgs/gfx/cursus.png" alt="cursus" />
+                            <img src="imgs/gfx/cursushov.png" class="img-top" alt="cursus hover" />
+                        </div>
+                    </a>
+
+                    <a class="par" target="_self" href="#CONTACT">
+                        <div class="card">
+                            <img src="imgs/gfx/contact.png" alt="contact" />
+                            <img src="imgs/gfx/contacthov.png" class="img-top" alt="contact hover" />
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="content-wrapper">
+                <!-- the following parts are set up for quick access from the linkbar at the top -->
+                <div class="container" id="HOME">
+                    <h2>Home</h2>
+                    <p class="text-body">
+                        Welkom!
+                        <br />
+                        <br />
+                        The Lost Worlds website heeft zich toegelegd op het terugvinden van je innerlijke balans
+                        <br />
+                        die leidt tot het herstellen of vernieuwen van spirituele en fysieke energie.
+                        <br />
+                        Dat klinkt natuurlijk fantastisch en het is ook geweldig fijn dat er mogelijkheden zijn,
+                        <br />
+                        om dit teweeg te brengen.
+                        <br />
+                        Zoiets gaat niet vanzelf: daarvoor is veel aandacht, inzet en inspanning nodig.
+                        <br />
+                        Van iedereen die hier iets mee wil.
+                        <br />
+                        Ik kan niet zeggen dat deze site met DE oplossing komt voor jouw innerlijke onbalans,
+                        <br />
+                        of jouw gebrek aan energie. Ook dat is van veel verschillende factoren afhankelijk.
+                        <br />
+                        <br />
+                        Wat kan ik voor jou betekenen?
+                        <br />
+                        Helemaal niks, of heel erg veel. Dat ligt voor een groot deel bij jezelf.
+                        <br />
+                        Jij zal er zelf wel iets aan moeten gaan doen.
+                        <br />
+                        Ik kan jou daarbij helpen, je adviezen geven, lezingen of workshops of cursussen geven.
+                        <br />
+                        Dat doe ik niet gratis. Ik heb rekeningen te betalen en helemaal niemand,
+                        <br />
+                        dus ook ik niet, kan van de lucht leven.
+                        <br />
+                        <br />
+                        Interesse? Lees dan verder op de <a target="_self" href="#ABOUT">about-sectie</a>.
+                        <br />
+                        <br />
+                        <a target="_self" href="#HOME">Terug naar HOME</a>
+                    </p>
+                </div>
+
+                <div class="container" id="ABOUT">
+                    <h2>About</h2>
+                    <p class="text-body">
+                        Ik ben John en ik hou mij ruim dertig jaar bezig met alternatieve stromingen.
+                        <br />
+                        Daarbij viel het mij op dat veel zaken hetzelfde zijn en ook dat er zaken niet besproken worden.
+                        <br />
+                        Ik probeer juist de onbesproken zaken boven water te halen en ik geloof in de kracht van
+                        persoonlijk
+                        <br />
+                        contact. Dat kan soms met een soort healing, een 1 op 1 sessie, een groeps-sessie,
+                        <br />
+                        een lezing of een (niet online) cursus zijn.
+                        <br />
+                        Er zijn genoeg zelfhulp websites, antrosofische sites, yoga-sites, trantra-sites,
+                        <br />
+                        noem maar op.
+                        <br />
+                        <br />
+                        Vaak wordt je doorverwezen naar professionele (lees: reguliere) hulpverleners.
+                        <br />
+                        Vaak wordt je overgehaald om online cursussen te doen, of e-boeken tegen betaling te
+                        <br />
+                        downloaden.
+                        <br />
+                        Op zich niks mis mee. Als je denkt, dat je dat geld er voor over hebt, prima.
+                        <br />
+                        Ik ga transparant zijn over wat dingen kosten. Als ik een lezing of een cursus geef,
+                        <br />
+                        dan spreek ik met je af wat het jou gaat kosten, in tijd en in geld.
+                        <br />
+                        En ook wat het jou gaat opleveren.
+                        <br />
+                        En ik laat je niet vooraf betalen.
+                        <br />
+                        Je betaalt pas, op het moment dat de cursus of de lezing daadwerkelijk plaats vindt.
+                        <br />
+                        Wil je meer weten over lezingen, workshops en cursussen? Ga dan naar de
+                        <a target="_self" href="#CURSUS">cursus-sectie</a>.
+                        <br />
+                        <br />
+                        <a target="_self" href="#HOME">Terug naar HOME</a>
+                    </p>
+                </div>
+
+                <div class="container" id="CURSUS">
+                    <h2>Cursus</h2>
+                    <p class="text-body">
+                        Heb je behoefte om jezelf beter te leren kennen? Om te ontdekken wat je innerlijke behoeften
+                        zijn?
+                        <br />
+                        Of heb je de behoefte om wat meer evenwichtig te zijn? Om een betere innerlijke balans te
+                        hebben?
+                        <br />
+                        Om meer in contact met jezelf te zijn?
+                        <br />
+                        <br />
+                        Daar heb ik verschillende workshops en cursussen voor. Dat kan 1 op 1 zijn, of in kleine
+                        groepjes
+                        <br />
+                        van 5 tot 10 personen.
+                        <br />
+                        Dat kan voor een aantal uren zijn, of een aantal dagdelen.
+                        <br />
+                        <br />
+                        Leuk en interessant om met vrienden, vriendinnen of familie te doen.
+                        <br />
+                        Niet in een duf gebouw, maar in de natuur, omringd door bos, of hei.
+                        <br />
+                        <br />
+                        Onderwerpen die besproken kunnen worden:
+                        <br />
+                        WIE ben ik, WAAR sta ik in het leven, WAAR wil ik heen? WAT wil ik? WAT ga ik doen?
+                        <br />
+                        HOE ga ik met mijzelf of mijn omgeving om? HOE kan ik positief zijn?
+                        <br />
+                        HOE ga ik met negativiteit om? WAT is spiritualiteit? HOE past religie daarin?
+                        <br />
+                        HOE ga ik met oordelen om?
+                        <br />
+                        <br />
+                        Indien je de behoefte hebt, om meer te weten te komen, of om een lezing bij te wonen,
+                        <br />
+                        of een workshop of cursus te volgen, ga dan naar de
+                        <a target="_self" href="#CONTACT">contact-sectie</a> en stuur mij een email
+                        <br />
+                        met daarin jouw vraag of behoefte. Ik zal dan zo spoedig mogelijk contact met je opnemen.
+                        <br />
+                        <br />
+                        <a target="_self" href="#HOME">Terug naar HOME</a>
+                    </p>
+                </div>
+
+                <div class="container" id="CONTACT">
+                    <h2>Contact</h2>
+                    <p class="text-body">
+                        Heb je naar aanleiding van de inhoud nog vragen?
+                        <br />
+                        <br />
+                        Stuur dan een mailtje naar:
+                        <a href="mailto:info@thelostworlds.com&subject=The Lost Worlds Website contact">
+                            info@thelostworlds.com
+                        </a>
+                        <!-- <input type="text" value="info@thelostworlds.com" id="myInput" /> &nbsp;
+                        <button onclick="myFunction()">Klik hier om het emailadres te kopieren</button> -->
+                        <br />
+                        <br />
+                        Op mailtjes reageer ik uiterlijk de volgende werkdag.
+                        <br />
+                        <br />
+                    </p>
+
+                    <p class="text-body inline-flex-center-center">
+                        Ik ben ook via Whatsapp te bereiken: &nbsp;
+                        <a id="whatsappme-link" class="flex-center-center" href="https://wa.me/+31638482631">
+                            <img style="height: 28px" src="imgs/gfx/phone.png" alt="phone" />
+                            <img style="height: 20px" src="imgs/gfx/number.png" alt="number" />
+                        </a>
+                    </p>
+
+                    <p class="text-body">
+                        <br />
+                        Ik probeer om binnen een redelijke tijd te reageren, tussen 9.00 en 18.00 uur is dat meestal
+                        binnen 15 minuten.
+                        <br />
+                        <br />
+                        <a target="_self" href="#HOME">Terug naar HOME</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
